@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Test JavaScript</h2>
+
+<button type="button" title="Crear y listar" onclick="javascript:crearListar()">Crear y listar</button>
+
+<table id="reqTable">
+    
+</table>
+
+@section scripts
+{
+    <script src="~/JavaScript/req.js"></script>
+
+    @*<script>
+        var array = new Array(6, 6, 6, 6, 6);
+
+        var max = 0;
+        for(i = 0; i < array.length; i++) {
+            if (max < array[i])
+                max = array[i];
+        }
+
+        console.log(max);
+
+    </script>*@
+}

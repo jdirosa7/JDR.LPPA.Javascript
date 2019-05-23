@@ -1,0 +1,34 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/site.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div> 
+        <header>
+            Nombre del header del sistema
+        </header>
+        <nav>
+            Links del nav
+        </nav>
+        <section>
+            @RenderBody()
+        </section>
+        <aside>
+
+        </aside>
+        <footer>
+            <label>Cantidad de requerimientos: </label>
+            <label id="cantReq"></label>
+            <br />
+            <br />
+            Lppa 2019
+        </footer>
+        @RenderSection("scripts", false)@*Cuando agregue js en las paginas que use el layouts, iran aca*@
+    </div>
+</body>
+</html>
